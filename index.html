@@ -1,1 +1,71 @@
-<!--Your HTML code here-->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="FitPlan helps organize sample fitness workouts and review a simple training plan.">
+  <title>FitPlan | Home</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="FitPlan home"><span class="brand-mark">F</span> FitPlan</a>
+      <nav aria-label="Main navigation">
+        <a aria-current="page" href="index.html">Home</a>
+        <a href="manageworkouts.html">Workouts</a>
+        <a href="analytics.html">Analytics</a>
+        <a href="aboutus.html">About Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">YOUR TRAINING, ORGANIZED</p>
+          <h1>Make every workout count.</h1>
+          <p class="hero-copy">Plan strength, cardio, and mobility sessions in one simple place. Add workouts and see how your training time is distributed.</p>
+          <div class="actions">
+            <a class="button button-primary" href="manageworkouts.html">Plan a workout</a>
+            <a class="button button-ghost" href="analytics.html">View analytics</a>
+          </div>
+        </div>
+        <img class="hero-image" src="assets/fitness-hero.svg" alt="Illustration of a training plan with a dumbbell and progress bars" width="520" height="380">
+      </div>
+    </section>
+
+    <section class="container section" aria-labelledby="overview-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow dark">AT A GLANCE</p>
+          <h2 id="overview-title">Your workout overview</h2>
+        </div>
+        <p>These numbers come from the example workouts. They change when you add, edit, or delete a workout.</p>
+      </div>
+      <div class="stats-grid">
+        <article class="stat-card"><span>Planned workouts</span><strong id="home-workout-count">0</strong></article>
+        <article class="stat-card"><span>Total training minutes</span><strong id="home-total-minutes">0</strong></article>
+        <article class="stat-card"><span>Workout categories</span><strong id="home-category-count">0</strong></article>
+      </div>
+    </section>
+
+    <section class="container section feature-section" aria-labelledby="how-title">
+      <div>
+        <p class="eyebrow dark">HOW IT WORKS</p>
+        <h2 id="how-title">A clear plan in three steps</h2>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card"><span class="feature-number">01</span><h3>Build</h3><p>Add a workout with its category, duration, and difficulty.</p></article>
+        <article class="feature-card"><span class="feature-number">02</span><h3>Adjust</h3><p>Review your plan and edit or remove workouts as needed.</p></article>
+        <article class="feature-card"><span class="feature-number">03</span><h3>Understand</h3><p>Use the chart to see where your planned minutes are going.</p></article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-inner"><span>FitPlan · Fitness Trainer demo</span><span>Made for ISM 6225 Assignment 1</span></div></footer>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FitPlan | Manage Workouts</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header"><div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="FitPlan home"><span class="brand-mark">F</span> FitPlan</a>
+    <nav aria-label="Main navigation"><a href="index.html">Home</a><a aria-current="page" href="manageworkouts.html">Workouts</a><a href="analytics.html">Analytics</a><a href="aboutus.html">About Us</a></nav>
+  </div></header>
+
+  <main id="main" class="container page-main">
+    <div class="page-heading"><p class="eyebrow dark">WORKOUT PLANNER</p><h1>Manage workouts</h1><p>Add, view, edit, or delete sample training sessions. Your changes are saved in this browser.</p></div>
+    <div class="workout-layout">
+      <section class="panel" aria-labelledby="form-title">
+        <h2 id="form-title">Add a workout</h2>
+        <p>Fill out all four fields.</p>
+        <form id="workout-form">
+          <label for="workout-name">Workout name</label>
+          <input id="workout-name" name="workout-name" type="text" placeholder="e.g., Full-body strength" maxlength="50" required>
+          <label for="workout-category">Category</label>
+          <select id="workout-category" name="workout-category" required><option value="">Choose a category</option><option>Strength</option><option>Cardio</option><option>Mobility</option></select>
+          <label for="workout-duration">Duration in minutes</label>
+          <input id="workout-duration" name="workout-duration" type="number" min="1" max="300" step="1" placeholder="e.g., 45" required>
+          <label for="workout-difficulty">Difficulty</label>
+          <select id="workout-difficulty" name="workout-difficulty" required><option value="">Choose a difficulty</option><option>Beginner</option><option>Intermediate</option><option>Advanced</option></select>
+          <div class="form-actions"><button class="button button-primary" id="save-button" type="submit">Add workout</button><button class="button button-muted" id="cancel-button" type="button" hidden>Cancel edit</button></div>
+        </form>
+        <p id="form-status" class="status" role="status" aria-live="polite"></p>
+      </section>
+
+      <section class="panel table-panel" aria-labelledby="list-title">
+        <div class="panel-heading"><div><h2 id="list-title">Workout list</h2><p>Use Edit or Delete beside any workout.</p></div><span id="workout-count" class="count-pill">0 workouts</span></div>
+        <div class="table-scroll"><table><thead><tr><th scope="col">Workout</th><th scope="col">Category</th><th scope="col">Minutes</th><th scope="col">Difficulty</th><th scope="col">Actions</th></tr></thead><tbody id="workout-rows"></tbody></table></div>
+        <p id="empty-message" class="empty-message" hidden>No workouts yet. Use the form to add one.</p>
+      </section>
+    </div>
+  </main>
+  <footer class="site-footer"><div class="container footer-inner"><span>FitPlan · Fitness Trainer demo</span><span>Made for ISM 6225 Assignment 1</span></div></footer>
+</body>
+</html>
