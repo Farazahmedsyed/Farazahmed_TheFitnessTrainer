@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="380" viewBox="0 0 520 380" role="img" aria-labelledby="title desc">
+  <title id="title">Fitness training plan</title><desc id="desc">A training card with a dumbbell icon and colorful progress bars</desc>
+  <rect x="44" y="24" width="432" height="330" rx="30" fill="#173b3a" stroke="#5d9180" stroke-width="2"/>
+  <rect x="68" y="48" width="384" height="282" rx="20" fill="#f9fcf8"/>
+  <rect x="92" y="73" width="176" height="15" rx="7.5" fill="#1b574a"/>
+  <rect x="92" y="101" width="113" height="9" rx="4.5" fill="#acbcb4"/>
+  <circle cx="379" cy="103" r="29" fill="#e1f4cc"/>
+  <g fill="#2b745b"><rect x="355" y="99" width="48" height="8" rx="4"/><rect x="349" y="91" width="9" height="24" rx="3"/><rect x="400" y="91" width="9" height="24" rx="3"/><rect x="344" y="95" width="5" height="16" rx="2"/><rect x="409" y="95" width="5" height="16" rx="2"/></g>
+  <path d="M92 147h336" stroke="#dbe8e0" stroke-width="2"/>
+  <circle cx="105" cy="178" r="9" fill="#225f50"/><rect x="126" y="173" width="126" height="10" rx="5" fill="#b6c8bf"/><rect x="92" y="198" width="260" height="12" rx="6" fill="#e6efe7"/><rect x="92" y="198" width="202" height="12" rx="6" fill="#24735d"/>
+  <circle cx="105" cy="239" r="9" fill="#60b594"/><rect x="126" y="234" width="112" height="10" rx="5" fill="#b6c8bf"/><rect x="92" y="259" width="260" height="12" rx="6" fill="#e6efe7"/><rect x="92" y="259" width="144" height="12" rx="6" fill="#60b594"/>
+  <circle cx="105" cy="300" r="9" fill="#acd878"/><rect x="126" y="295" width="105" height="10" rx="5" fill="#b6c8bf"/><rect x="288" y="295" width="140" height="10" rx="5" fill="#e4ede6"/>
+</svg>
